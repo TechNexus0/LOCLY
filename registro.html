@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Locly</title>
+
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Cormorant+Garamond&family=Parisienne&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<center>
+
+<div id="barra">
+    <h1>LOCLY</h1>
+</div>
+
+<br>
+
+<h2>Registro</h2>
+
+<div id="login">
+
+    <input type="text" placeholder="Nombre completo" id="nombre">
+
+    <br><br>
+
+    <input type="email" placeholder="Correo electrónico" id="correo">
+
+    <br><br>
+
+    <input type="text" placeholder="Usuario" id="usuario">
+
+    <br><br>
+
+    <input type="password" placeholder="Contraseña" id="contrasena">
+
+    <br><br>
+
+    <input type="password" placeholder="Confirmar contraseña" id="confirmar">
+
+    <br><br>
+
+    <select id="tipo-cuenta">
+        <option disabled selected>Seleccione el tipo de cuenta</option>
+        <option>Usuario</option>
+        <option>Tienda</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="confirmarRegistro()">Crear cuenta</button>
+
+    <br><br>
+
+    <p>¿Ya tienes una cuenta?</p>
+
+    <a href="index.html"><button>Iniciar sesión</button></a>
+</div>
+</center>
+<script>
+function confirmarRegistro(){
+
+    let nombre = document.getElementById("nombre").value;
+    let correo = document.getElementById("correo").value;
+    let contrasena = document.getElementById("contrasena").value;
+    let confirmar = document.getElementById("confirmar").value;
+    let tipo = document.getElementById("tipo-cuenta").value;
+
+    if(nombre=="" || correo=="" || contrasena=="" || confirmar=="" || tipo==""){
+
+        alert("Complete todos los campos.");
+        return;
+    }
+    if(contrasena!=confirmar){
+        alert("Las contraseñas no coinciden.");
+        return;
+    }
+    alert("Cuenta creada correctamente");
+
+    window.location.href="index.html";
+
+}
+</script>
+</body>
+</html>

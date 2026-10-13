@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Locly</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<center>
+
+<div class="buscador">
+    <input type="search" placeholder="Buscar...">
+</div>
+
+<div class="filtros">
+    <button class="btn-filtro activo" data-categoria="todos">Todo</button>
+    <button class="btn-filtro" data-categoria="chaqueta">Chaquetas</button>
+    <button class="btn-filtro" data-categoria="vestido">Vestidos</button>
+    <button class="btn-filtro" data-categoria="blusa">Blusas</button>
+    <button class="btn-filtro" data-categoria="jeans">Jeans</button>
+    <button class="btn-filtro" data-categoria="falda">Faldas</button>
+    <button class="btn-filtro" data-categoria="short">Shorts</button>
+</div>
+
+<div class="carrusel">
+
+    <button id="izquierda">❮</button>
+
+    <div class="tarjetas">
+
+        <div class="tarjeta" data-categoria="chaqueta">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S7664665b01194f469a977505b606ffc80.jpg">
+            <button class="button encontrar">Encontrar ahora</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="chaqueta">
+            <img src="https://www.mytheresa.com/image/332/376/100/74/P01153678.jpg">
+            <button class="button encontrar">Encontrar ahora</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="vestido">
+            <img src="https://m.media-amazon.com/images/I/51D+lqXaT0L.jpg">
+            <button class="button encontrar">Encontrar ahora</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="vestido">
+            <img src="https://m.media-amazon.com/images/I/613foOjxX6L._AC_UY1000_.jpg">
+            <button class="button encontrar">Encontrar ahora</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="blusa">
+            <img src="https://ivonne.com/cdn/shop/products/10105940negro_6.jpg?v=1709319159&width=940">
+            <button class="button encontrar">Encontrar ahora</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="blusa">
+            <img src="https://m.media-amazon.com/images/I/71P31cRYIkL._AC_UY350_.jpg">
+            <button class="button encontrar">Encontrar ahora</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="jeans">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPi3AGzag00l5LBKsQg4XOdO2q1Wc6oe3XkQ&s">
+            <button class="button encontrar">Encontrar ahora</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="jeans">
+            <img src="https://media.mango.com/is/image/punto/27031197-TO-900?wid=2048">
+            <button class="button encontrar">Encontrar ahora</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="falda">
+            <img src="https://m.media-amazon.com/images/I/51zIbNcJBpL._AC_SY1000_.jpg">
+            <button class="button encontrar">Encontrar ahora</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="falda">
+            <img src="https://s.alicdn.com/@sc04/kf/H23eaa12a9b6c456fa2a55fa23e886f58Q/Elastic-Waist-Black-White-Color-Plaid-Print-Hot-Sale-Casual-Fashion-Mini-Skirt-for-Women.jpg_300x300.jpg">
+            <button class="button encontrar">Encontrar ahora</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="short">
+            <img src="https://m.media-amazon.com/images/I/71+QFsgagRL.jpg">
+            <button class="button encontrar">Encontrar ahora</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="short">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOT7JGQAaWID_isyzhK2Mmi_0agWb-Ssolqw&s">
+            <button class="button encontrar">Encontrar ahora</button>
+        </div>
+
+    </div>
+
+    <button id="derecha">❯</button>
+
+</div>
+
+</center>
+
+<nav class="barra-nav">
+    <button class="btn-nav" id="favoritos">❤️</button>
+
+    <button class="btn-nav" onclick="cerrarSesion()">🚪</button>
+</nav>
+
+<script src="script.js"></script>
+
+</body>
+</html>

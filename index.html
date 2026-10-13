@@ -1,0 +1,63 @@
+<html>
+<head>
+ <title>Locly</title>
+ <link rel="stylesheet" href="style2.css">
+<link href="https://fonts.googleapis.com/css2?family=Italianno&family=Cormorant+Garamond&family=Parisienne&display=swap" rel="stylesheet">
+</head>
+<body>
+<center>
+  
+  <div id="barra">
+      <h1>LOCLY</h1> 
+</div>
+<br>
+
+ <h2>Login</h2>
+<div id="login"> 
+ <input type="text"  placeholder="usuario" id="usuario" required>
+<br><br>
+ <input type="password" placeholder="clave" id="clave" required>
+<br><br>
+
+<button type="button" onclick="iniciarSesion()">Iniciar sesión</button>
+
+<p>O</P>
+
+
+
+<a href="registro.html"><button>Registrarse</button></a>
+  
+</div>
+
+</center>
+<center>
+<a href="#"><h3>Términos y condiciones</h3></a>
+</center>
+
+
+ 
+<script>
+
+function iniciarSesion(){
+
+    let usuario = document.getElementById("usuario").value;
+    let clave = document.getElementById("clave").value;
+
+    if(usuario=="Pedro Pascal" && clave=="123456"){
+
+        alert("Inicio de sesión exitoso.");
+        window.location.href="catalogo.html";
+
+    }else{
+
+        alert("Usuario o contraseña incorrectos.");
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
+
